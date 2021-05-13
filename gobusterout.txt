@@ -1,0 +1,25 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.44.213/
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                wordlistgobuster.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Extensions:              txt
+[+] Timeout:                 10s
+===============================================================
+2021/05/13 15:23:17 Starting gobuster in directory enumeration mode
+===============================================================
+/wp-admin             (Status: 301) [Size: 237] [--> http://10.10.44.213/wp-admin/]
+/audio                (Status: 301) [Size: 234] [--> http://10.10.44.213/audio/]   
+/admin                (Status: 301) [Size: 234] [--> http://10.10.44.213/admin/]   
+/robots               (Status: 200) [Size: 41]                                     
+/robots.txt           (Status: 200) [Size: 41]                                     
+/atom                 (Status: 301) [Size: 0] [--> http://10.10.44.213/feed/atom/] 
+/robots.txt           (Status: 200) [Size: 41]                                     
+===============================================================
+2021/05/13 15:23:29 Finished
+===============================================================
