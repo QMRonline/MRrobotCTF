@@ -7,9 +7,13 @@ QMARK CTF
 Steps:
 
 #download the vpn file to connect tryhackme server
+
 #save in desktop 
+
 #open terminal in the folder and type command [sudo openvpn filename.octozion.ovpn]     //if you dont have openvpn installed follow this link https://openvpn.net/community-resources/installing-openvpn/
+
 #Join the room
+
 #Task 1:instructions 
 #Task2 :
     KEY1 & 2 & 3 :
